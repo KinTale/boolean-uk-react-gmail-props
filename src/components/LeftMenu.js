@@ -1,11 +1,7 @@
-
-
 const LeftMenu = (props) => {
     
-
     const unreadEmails = props.emails.filter(email => !email.read)
     const starredEmails = props.emails.filter(email => email.starred)
-
 
     return <nav className="left-menu">
         <ul className="inbox-list">
