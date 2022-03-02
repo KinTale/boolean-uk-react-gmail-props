@@ -10,11 +10,12 @@ const Emails = (props) => {
 
     if (props.currentTab === 'starred')
         filteredEmails = getStarredEmails(filteredEmails)
-        
+
     return <main className="emails">
         <ul>
             {filteredEmails.map((email, index) => (
                 <Email key={index} email={email}
+                setEmails={props.setEmails}
                     setSelectedEmail={props.setSelectedEmail} />
             ))}
         </ul>

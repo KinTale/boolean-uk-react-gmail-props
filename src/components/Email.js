@@ -1,5 +1,5 @@
 const Email = (props) => {
-    
+
     const toggleStar = targetEmail => {
         const updatedEmails = emails =>
             emails.map(email =>
